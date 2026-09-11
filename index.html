@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,93 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELVÉRA JEWELS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
             background-color: #f8f5ef;
             color: #222;
         }
+
         .navbar {
             background-color: #151515;
             border: 0 ;
             margin-bottom: 14px;
         }
+
         .navbar-brand {
             color: white ;
             font-size: 25px;
             font-weight: bold;
             letter-spacing: 5px;
         }
+
         .navbar-brand:hover {
             color: #c9a227 ;
         }
+
         .navbar-toggler {
             border: 1px solid #c9a227;
             padding: 7px 10px;
         }
+
         .navbar-toggler:focus {
             box-shadow: 0 0 0 0.15rem rgba(201, 162, 39, 0.35);
         }
+
         .navbar-toggler-icon {
             filter: brightness(0) invert(1);
         }
+
         .nav-link {
             color: white ;
             margin: 4px;
             border-radius: 4px;
             padding: 8px 12px ;
         }
+
         .nav-link:hover {
             color: #c9a227 ;
             background-color: #242424;
         }
+
         .login-link {
             border: 1px solid #c9a227;
         }
+
         .signup-link {
             background-color: #c9a227;
             color: #151515 ;
         }
+
         .signup-link:hover {
             background-color: #e0bd55;
             color: #151515 ;
         }
+
         .hero-wrapper {
             background-color: #e8dfd0;
             padding: 8px;
             border-radius: 8px;
             margin-bottom: 18px;
         }
+
         .hero {
             min-height: 78vh;
-            background-image:
-                linear-gradient(
-                    rgba(0, 0, 0, 0.40),
-                    rgba(0, 0, 0, 0.40)
-                ),
-                url("home_hero.jpg");
             background-size: cover;
             background-position: center;
             border-radius: 4px;
         }
+
         .hero h1 {
             font-size: 65px;
             letter-spacing: 7px;
         }
+
         .hero p {
             letter-spacing: 2px;
         }
+
         .gold {
             color: #b99745;
         }
+
         .section-title {
             letter-spacing: 3px;
         }
+
         .category-card {
             height: 280px;
             background-size: cover;
             background-position: center;
             border-radius: 8px;
         }
+
         .category-title {
             background-color: rgba(0, 0, 0, 0.60);
             color: white;
@@ -99,245 +114,737 @@
             border-radius: 4px;
             letter-spacing: 2px;
         }
+
         .product-card {
             border: 0;
             transition: 0.3s;
         }
+
         .product-card:hover {
             transform: translateY(-7px);
         }
+
         .product-card img {
             height: 300px;
             object-fit: cover;
         }
+
         .price {
             color: #a17b25;
             font-weight: bold;
         }
+
         .offer-section {
             background-color: #151515;
             margin-top: 18px;
         }
+
         footer {
             background-color: #151515;
             margin-top: 18px;
         }
+
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item .hero {
+            border-radius: 4px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 1.5rem;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: #c9a227;
+        }
+
         @media (max-width: 767px) {
             .hero {
                 min-height: 65vh;
             }
+
             .hero h1 {
                 font-size: 40px;
                 letter-spacing: 4px;
             }
+
             .category-card {
                 height: 240px;
             }
+
             .navbar-brand {
                 font-size: 21px;
             }
         }
     </style>
 </head>
+
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm">
         <div class="container">
+
             <a href="index.html" class="navbar-brand">ELVÉRA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
             <div class="collapse navbar-collapse" id="mainNavbar">
+
                 <ul class="navbar-nav ms-auto align-items-lg-center">
+
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a href="collections.html" class="nav-link">Collections</a>
                     </li>
+
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a>
                     </li>
+
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
+
                     <li class="nav-item">
                         <a href="login.html" class="nav-link login-link">Login</a>
                     </li>
+
                     <li class="nav-item">
                         <a href="signup.html" class="nav-link signup-link">Signup</a>
                     </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
 
+
     <div class="hero-wrapper">
-        <section class="hero d-flex align-items-center text-center text-white">
-            <div class="container">
-                <p class="text-uppercase fw-semibold">THE ART OF ELEGANCE</p>
-                <h1 class="fw-bold">
-                    TIMELESS
-                    <br>
-                    JEWELLERY
-                </h1>
-                <p class="lead">
-                    Discover jewellery designed to celebrate
-                    your most beautiful moments.
-                </p>
-                <a href="collections.html" class="btn btn-light btn-lg px-5 py-3 mt-3">EXPLORE COLLECTION</a>
+
+        <div id="heroCarousel"
+             class="carousel slide"
+             data-bs-ride="carousel"
+             data-bs-interval="4000">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <section class="hero d-flex align-items-center text-center text-white"
+                             style="background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('home_hero.jpg');">
+
+                        <div class="container">
+
+                            <p class="text-uppercase fw-semibold">
+                                THE ART OF ELEGANCE
+                            </p>
+
+                            <h1 class="fw-bold">
+                                TIMELESS
+                                <br>
+                                JEWELLERY
+                            </h1>
+
+                            <p class="lead">
+                                Discover jewellery designed to celebrate
+                                your most beautiful moments.
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-light btn-lg px-5 py-3 mt-3">
+                                EXPLORE COLLECTION
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <section class="hero d-flex align-items-center text-center text-white"
+                             style="background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('product_01_ring.jpg');">
+
+                        <div class="container">
+
+                            <p class="text-uppercase fw-semibold">
+                                HANDCRAFTED LUXURY
+                            </p>
+
+                            <h1 class="fw-bold">
+                                PURE
+                                <br>
+                                ELEGANCE
+                            </h1>
+
+                            <p class="lead">
+                                Every piece tells a story of
+                                craftsmanship and grace.
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-light btn-lg px-5 py-3 mt-3">
+                                EXPLORE COLLECTION
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <section class="hero d-flex align-items-center text-center text-white"
+                             style="background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('product_10_bangle.jpg');">
+
+                        <div class="container">
+
+                            <p class="text-uppercase fw-semibold">
+                                THE BRIDAL EDIT
+                            </p>
+
+                            <h1 class="fw-bold">
+                                FOREVER
+                                <br>
+                                MOMENTS
+                            </h1>
+
+                            <p class="lead">
+                                Gold and diamond jewellery
+                                for your special day.
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-light btn-lg px-5 py-3 mt-3">
+                                EXPLORE COLLECTION
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
             </div>
-        </section>
+
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"
+                      aria-hidden="true">
+                </span>
+
+                <span class="visually-hidden">
+                    Previous
+                </span>
+
+            </button>
+
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"
+                      aria-hidden="true">
+                </span>
+
+                <span class="visually-hidden">
+                    Next
+                </span>
+
+            </button>
+
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                </button>
+
+            </div>
+
+        </div>
+
     </div>
 
+
     <section class="py-5">
+
         <div class="container">
+
             <div class="text-center mb-5">
-                <p class="gold fw-bold mb-2">DISCOVER</p>
-                <h2 class="section-title fw-bold">SHOP BY CATEGORY</h2>
+
+                <p class="gold fw-bold mb-2">
+                    DISCOVER
+                </p>
+
+                <h2 class="section-title fw-bold">
+                    SHOP BY CATEGORY
+                </h2>
+
             </div>
+
+
             <div class="row g-4">
+
                 <div class="col-md-4">
-                    <div class="category-card d-flex align-items-end justify-content-center" style="background-image:url('category_rings.jpg');">
-                        <h4 class="category-title mb-4">RINGS</h4>
+
+                    <div class="category-card d-flex align-items-end justify-content-center"
+                         style="background-image:url('category_rings.jpg');">
+
+                        <h4 class="category-title mb-4">
+                            RINGS
+                        </h4>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-md-4">
-                    <div class="category-card d-flex align-items-end justify-content-center" style="background-image:url('category_necklaces.jpg');">
-                        <h4 class="category-title mb-4">NECKLACES</h4>
+
+                    <div class="category-card d-flex align-items-end justify-content-center"
+                         style="background-image:url('category_necklaces.jpg');">
+
+                        <h4 class="category-title mb-4">
+                            NECKLACES
+                        </h4>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-md-4">
-                    <div class="category-card d-flex align-items-end justify-content-center" style="background-image:url('category_earrings.jpg');">
-                        <h4 class="category-title mb-4">EARRINGS</h4>
+
+                    <div class="category-card d-flex align-items-end justify-content-center"
+                         style="background-image:url('category_earrings.jpg');">
+
+                        <h4 class="category-title mb-4">
+                            EARRINGS
+                        </h4>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-md-4">
-                    <div class="category-card d-flex align-items-end justify-content-center" style="background-image:url('category_bracelets.jpg');">
-                        <h4 class="category-title mb-4">BRACELETS</h4>
+
+                    <div class="category-card d-flex align-items-end justify-content-center"
+                         style="background-image:url('category_bracelets.jpg');">
+
+                        <h4 class="category-title mb-4">
+                            BRACELETS
+                        </h4>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-md-4">
-                    <div class="category-card d-flex align-items-end justify-content-center" style="background-image:url('category_bangles.jpg');">
-                        <h4 class="category-title mb-4">BANGLES</h4>
+
+                    <div class="category-card d-flex align-items-end justify-content-center"
+                         style="background-image:url('category_bangles.jpg');">
+
+                        <h4 class="category-title mb-4">
+                            BANGLES
+                        </h4>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-md-4">
-                    <div class="category-card d-flex align-items-end justify-content-center" style="background-image:url('category_diamonds.jpg');">
-                        <h4 class="category-title mb-4">DIAMONDS</h4>
+
+                    <div class="category-card d-flex align-items-end justify-content-center"
+                         style="background-image:url('category_diamonds.jpg');">
+
+                        <h4 class="category-title mb-4">
+                            DIAMONDS
+                        </h4>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
 
     <section class="py-5 bg-white">
+
         <div class="container">
+
             <div class="text-center mb-5">
-                <p class="gold fw-bold">CURATED FOR YOU</p>
-                <h2 class="section-title fw-bold">BEST SELLERS</h2>
+
+                <p class="gold fw-bold">
+                    CURATED FOR YOU
+                </p>
+
+                <h2 class="section-title fw-bold">
+                    BEST SELLERS
+                </h2>
+
             </div>
+
+
             <div class="row g-4">
+
                 <div class="col-sm-6 col-lg-3">
+
                     <div class="card product-card shadow-sm h-100">
-                        <img src="product_01_ring.jpg" class="card-img-top" alt="Celeste Ring">
+
+                        <img src="product_01_ring.jpg"
+                             class="card-img-top"
+                             alt="Celeste Ring">
+
                         <div class="card-body text-center">
-                            <h5>Celeste Ring</h5>
-                            <p class="text-muted">18K Gold</p>
-                            <p class="price">₹28,999</p>
-                            <a href="collections.html" class="btn btn-dark">View Product</a>
+
+                            <h5>
+                                Celeste Ring
+                            </h5>
+
+                            <p class="text-muted">
+                                18K Gold
+                            </p>
+
+                            <p class="price">
+                                ₹28,999
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-dark">
+                                View Product
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-sm-6 col-lg-3">
+
                     <div class="card product-card shadow-sm h-100">
-                        <img src="product_03_necklace.jpg" class="card-img-top" alt="Aurelia Necklace">
+
+                        <img src="product_03_necklace.jpg"
+                             class="card-img-top"
+                             alt="Aurelia Necklace">
+
                         <div class="card-body text-center">
-                            <h5>Aurelia Necklace</h5>
-                            <p class="text-muted">22K Gold</p>
-                            <p class="price">₹48,999</p>
-                            <a href="collections.html" class="btn btn-dark">View Product</a>
+
+                            <h5>
+                                Aurelia Necklace
+                            </h5>
+
+                            <p class="text-muted">
+                                22K Gold
+                            </p>
+
+                            <p class="price">
+                                ₹48,999
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-dark">
+                                View Product
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-sm-6 col-lg-3">
+
                     <div class="card product-card shadow-sm h-100">
-                        <img src="product_05_earrings.jpg" class="card-img-top" alt="Élan Earrings">
+
+                        <img src="product_05_earrings.jpg"
+                             class="card-img-top"
+                             alt="Élan Earrings">
+
                         <div class="card-body text-center">
-                            <h5>Élan Earrings</h5>
-                            <p class="text-muted">Gold</p>
-                            <p class="price">₹22,999</p>
-                            <a href="collections.html" class="btn btn-dark">View Product</a>
+
+                            <h5>
+                                Élan Earrings
+                            </h5>
+
+                            <p class="text-muted">
+                                Gold
+                            </p>
+
+                            <p class="price">
+                                ₹22,999
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-dark">
+                                View Product
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
+
                 <div class="col-sm-6 col-lg-3">
+
                     <div class="card product-card shadow-sm h-100">
-                        <img src="product_07_bracelet.jpg" class="card-img-top" alt="Lumière Bracelet">
+
+                        <img src="product_07_bracelet.jpg"
+                             class="card-img-top"
+                             alt="Lumière Bracelet">
+
                         <div class="card-body text-center">
-                            <h5>Lumière Bracelet</h5>
-                            <p class="text-muted">Rose Gold</p>
-                            <p class="price">₹31,999</p>
-                            <a href="collections.html" class="btn btn-dark">View Product</a>
+
+                            <h5>
+                                Lumière Bracelet
+                            </h5>
+
+                            <p class="text-muted">
+                                Rose Gold
+                            </p>
+
+                            <p class="price">
+                                ₹31,999
+                            </p>
+
+                            <a href="collections.html"
+                               class="btn btn-dark">
+                                View Product
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+
     <section class="offer-section py-5">
+
         <div class="container">
+
             <div class="row align-items-center">
+
                 <div class="col-lg-8 text-white">
-                    <p class="gold fw-bold">EXCLUSIVE COLLECTION</p>
-                    <h2 class="display-6 fw-bold">THE BRIDAL COLLECTION</h2>
+
+                    <p class="gold fw-bold">
+                        EXCLUSIVE COLLECTION
+                    </p>
+
+                    <h2 class="display-6 fw-bold">
+                        THE BRIDAL COLLECTION
+                    </h2>
+
                     <p class="lead">
                         Celebrate your special day with timeless
                         gold and diamond jewellery.
                     </p>
+
                 </div>
+
+
                 <div class="col-lg-4 text-lg-end">
-                    <a href="collections.html" class="btn btn-outline-light btn-lg px-4 py-3">SHOP BRIDAL</a>
+
+                    <a href="collections.html"
+                       class="btn btn-outline-light btn-lg px-4 py-3">
+                        SHOP BRIDAL
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+
     <footer class="py-5 text-white">
+
         <div class="container">
+
             <div class="row g-4">
+
                 <div class="col-md-4">
-                    <h4 class="fw-bold">ELVÉRA</h4>
+
+                    <h4 class="fw-bold">
+                        ELVÉRA
+                    </h4>
+
                     <p class="text-secondary">
                         Fine jewellery created for
                         unforgettable moments.
                     </p>
+
                 </div>
+
+
                 <div class="col-md-3">
-                    <h6>SHOP</h6>
-                    <p><a href="collections.html" class="text-secondary text-decoration-none">Rings</a></p>
-                    <p><a href="collections.html" class="text-secondary text-decoration-none">Necklaces</a></p>
-                    <p><a href="collections.html" class="text-secondary text-decoration-none">Earrings</a></p>
-                    <p><a href="collections.html" class="text-secondary text-decoration-none">Bracelets</a></p>
+
+                    <h6>
+                        SHOP
+                    </h6>
+
+                    <p>
+                        <a href="collections.html"
+                           class="text-secondary text-decoration-none">
+                            Rings
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="collections.html"
+                           class="text-secondary text-decoration-none">
+                            Necklaces
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="collections.html"
+                           class="text-secondary text-decoration-none">
+                            Earrings
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="collections.html"
+                           class="text-secondary text-decoration-none">
+                            Bracelets
+                        </a>
+                    </p>
+
                 </div>
+
+
                 <div class="col-md-3">
-                    <h6>CUSTOMER CARE</h6>
-                    <p><a href="contact.html" class="text-secondary text-decoration-none">Contact Us</a></p>
-                    <p class="text-secondary">Shipping</p>
-                    <p class="text-secondary">Returns</p>
-                    <p class="text-secondary">Privacy Policy</p>
+
+                    <h6>
+                        CUSTOMER CARE
+                    </h6>
+
+                    <p>
+                        <a href="contact.html"
+                           class="text-secondary text-decoration-none">
+                            Contact Us
+                        </a>
+                    </p>
+
+                    <p class="text-secondary">
+                        Shipping
+                    </p>
+
+                    <p class="text-secondary">
+                        Returns
+                    </p>
+
+                    <p class="text-secondary">
+                        Privacy Policy
+                    </p>
+
                 </div>
+
+
                 <div class="col-md-2">
-                    <h6>ACCOUNT</h6>
-                    <p><a href="login.html" class="text-secondary text-decoration-none">Login</a></p>
-                    <p><a href="signup.html" class="text-secondary text-decoration-none">Signup</a></p>
+
+                    <h6>
+                        ACCOUNT
+                    </h6>
+
+                    <p>
+                        <a href="login.html"
+                           class="text-secondary text-decoration-none">
+                            Login
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="signup.html"
+                           class="text-secondary text-decoration-none">
+                            Signup
+                        </a>
+                    </p>
+
                 </div>
+
             </div>
+
             <hr>
-            <p class="text-center text-secondary mb-0">&copy;  2026 Elvéra Jewels <br>Design by Abhiram </p>
+
+            <p class="text-center text-secondary mb-0">
+                &copy; 2026 Elvéra Jewels
+                <br>
+                Design by Abhiram
+            </p>
+
         </div>
+
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
